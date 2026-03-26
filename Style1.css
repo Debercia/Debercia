@@ -448,23 +448,7 @@ h2{
 
 
 
-
-
-footer{
-    padding: 4px;
-    margin: 0px;
-    border: none;
-    width: 100%;
-    height: 100px;
-    background-color:hwb(35 59% 7%); 
-}
-
-
-
-
-
-/* ===== RESET CIBLÉ ===== */
-    *, *::before, *::after { box-sizing: border-box; }
+    
 
     /* ===== VARIABLES ===== */
     :root {
@@ -473,16 +457,12 @@ footer{
       --loofah:   #c06898;
       --ppp:      #7eaa6e;
       --card-bg:  #faf8f5;
-      --border:   #e8e2da;
+      --border:   #000000;
       --text:     #1a1a1a;
-      --muted:    #6b6460;
+      --muted:    #000000;
     }
 
-    /* ===== HEADER (repris du fichier original) ===== */
-    header h1 {
-      padding: 30px;
-      text-align: center;
-    }
+    
 
     /* ===== INTRO SECTION ===== */
     .projets-intro {
@@ -497,13 +477,14 @@ footer{
       font-size: 11px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #b5a89a;
+      color: #000000;
       margin-bottom: 14px;
     }
     .projets-intro p {
-      font-family: 'Cormorant Garamond', sans-serif;
-      font-size: 22px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
       color: var(--muted);
+      color: #000000;
       line-height: 1.75;
       width: auto;
       margin: 0 auto;
@@ -573,7 +554,7 @@ footer{
     .projet-badge {
       display: inline-block;
       font-family: 'DM Sans', sans-serif;
-      font-size: 10px;
+      font-size: 15px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--accent);
@@ -691,5 +672,19 @@ footer{
       .projets-grid-wrapper { padding: 40px 20px 80px; }
     }
 
-
   
+
+
+
+footer{
+    padding: 4px;
+    margin: 0px;
+    border: none;
+    width: 100%;
+    height: 100px;
+    background-color:hwb(35 59% 7%); 
+}
+
+
+
+

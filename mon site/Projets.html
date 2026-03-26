@@ -6,6 +6,10 @@
         <title>DITOMENE DEBERCIA EMMANUELLE</title>
         <meta name="Desription" content="Ma page html">
         <link rel="stylesheet" href="Style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  
     </head>
     <body>
         <header>
@@ -23,26 +27,148 @@
             </ul>
             <h1>Projets</h1>
         </header>
-        <main>
-            <h2>Voici un aperçu des projets que j'ai menés</h2><br>
-        <h2><p style="text-align:left;padding-left: 300px;padding-top: -30px;margin-top: -30px;">Réalisation d'une brochure</p><p style="text-align: right;padding-right: 100px;padding-top: -30px;margin-top: -30px;">Création d'un calculateur d'adresse IP</p></h2>
-        <nav style="text-align: center;"><img src="bro.png" alt=""> <img src="pro 1.png" alt=""></nav>
-        <section>
-            <h1>Brochure</h1>
-            <h2>Ce projet consistait à réaliser une brocure portant sur les appréhensions d'un étudiant étranger qui veut s'inscrire en BUT R & T à L'UCA. Le but principal du projet était donc de faire une foire aux questions en exposant des craintes mais aussi des solutions pour remédier à cela de façon à exprimer mon ressenti étant moi-même étudiante étrangère dans cet établissement. La réalisation de ce projet m'a permis d'apprendre davantage de choses en commençant par la prise en main d'un nouveau logiciel de travail, la découverte de multiples informations sur mon établissement ainsi qu'une meilleure organisation pour mes projets futurs. 
-            </h2>
-        </section>
-        <section>
-            <h1>Calculateur</h1>
-            <h2>Pour ce projet il m’a fallu créer un calculateur d’adresse IP, permettant d'effectuer des calculs de sous-réseaux pour un bloc d'adresses et un masque de sous-réseau donnés. Toutes ces taches etaient à exécuter en me servant au préalable de mes connaissances acquises en Réseaux notamment sur les plans d'adressages IP, ainsi que sur le langage de programmation python, en utilisant le compulateur Programiz ou l'outil Visual Studio Code pour l’interprétation du programme. Cela m’a permis de multiplier mes connaissances en programmation, améliorer mes compétences et par conséquent évoluer. 
-            </h2>
-        </section>
-        </main>
+       
+            
+  <!-- MAIN -->
+  <main>
+
+    <div class="projets-intro">
+     
+      <p>Voici un aperçu des projets qui ont jalonné mon parcours — académique et personnel.</p>
+    </div>
+
+    <div class="projets-grid-wrapper">
+      <div class="projets-grid">
+
+        <!-- CARTE 1 : ABC Bourse -->
+        <div class="projet-card card-bourse">
+          <img class="projet-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fit=crop" alt="Bourse et marchés financiers">
+          <span class="projet-icon">📈</span>
+          <span class="projet-badge">Finance · Simulation</span>
+          <h2 class="projet-title">Simulation boursière ABC Bourse</h2>
+          <p class="projet-desc">
+            Gestion d'un portefeuille virtuel de 100&nbsp;000&nbsp;€ en conditions réelles,
+            avec pour objectif la maximisation des rendements sur la durée de la simulation.
+          </p>
+          <ul class="projet-bullets">
+            <li>Analyse fondamentale et technique pour la sélection de titres</li>
+            <li>Gestion active du risque et allocation d'actifs</li>
+            <li>Prise de décision en environnement incertain, en temps réel</li>
+          </ul>
+          <span class="projet-highlight">🏅 4ème sur une centaine de participants</span>
+          <div class="projet-tags">
+            <span class="projet-tag">Analyse financière</span>
+            <span class="projet-tag">Gestion de portefeuille</span>
+            <span class="projet-tag">Risk management</span>
+          </div>
+        </div>
+
+        <!-- CARTE 2 : Portfolio personnel -->
+        <div class="projet-card card-portfolio">
+          <img class="projet-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&fit=crop" alt="Développement web et code">
+          <span class="projet-icon">💻</span>
+          <span class="projet-badge">Développement Web · Autonomie</span>
+          <h2 class="projet-title">Portfolio personnel</h2>
+          <p class="projet-desc">
+            Conception et développement de ce site de présentation personnelle, 
+            réalisé entièrement en autonomie — de la structure HTML à la mise en forme CSS.
+          </p>
+          <ul class="projet-bullets">
+            <li>Design et architecture du site pensés de zéro</li>
+            <li>Utilisation de VS Code et GitHub pour le versionnage</li>
+            <li>Recours à l'IA comme outil d'optimisation et de débogage</li>
+            <li>Résolution de contraintes techniques en autonomie (Boot Camp, machine virtuelle) pour ne jamais bloquer sur un rendu</li>
+          </ul>
+          <div class="projet-tags">
+            <span class="projet-tag">HTML / CSS</span>
+            <span class="projet-tag">VS Code</span>
+            <span class="projet-tag">GitHub</span>
+            <span class="projet-tag">IA</span>
+          </div>
+        </div>
+
+        <!-- CARTE 3 : Loofah Nature -->
+        <div class="projet-card card-loofah">
+          <img class="projet-img" src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80&fit=crop" alt="Cosmétiques naturels et éthiques">
+          <span class="projet-icon">🌿</span>
+          <span class="projet-badge">Entrepreneuriat · PÉPITE UCA</span>
+          <h2 class="projet-title">Loofah Nature — Étudiante-Entrepreneur</h2>
+          <p class="projet-desc">
+            En décembre 2025, j'ai obtenu le statut <strong>Étudiante-Entrepreneur</strong> 
+            (dispositif PÉPITE, Université Clermont Auvergne) à l'issue d'une présentation devant 
+            un comité de sélection. Mon projet&nbsp;: <em>Loofah Nature</em>, une marque de 
+            beauté éthique premium pour peaux sensibles.
+          </p>
+          <hr class="projet-sep">
+          <ul class="projet-bullets">
+            <li>Formalisation d'un business model complet</li>
+            <li>Réflexion sur la rentabilité, la trésorerie et le pricing</li>
+            <li>Défense du projet devant jury — argumentation stratégique</li>
+            <li>Application concrète des compétences acquises en finance</li>
+          </ul>
+          <div class="projet-tags">
+            <span class="projet-tag">Business model</span>
+            <span class="projet-tag">Stratégie financière</span>
+            <span class="projet-tag">Pitch</span>
+            <span class="projet-tag">Entrepreneuriat</span>
+          </div>
+        </div>
+
+        <!-- CARTE 4 : PPP -->
+        <div class="projet-card card-ppp">
+          <img class="projet-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&fit=crop" alt="Orientation professionnelle et rencontre">
+          <span class="projet-icon">🎯</span>
+          <span class="projet-badge">Orientation · L2</span>
+          <h2 class="projet-title">Projet Personnel &amp; Professionnel (PPP)</h2>
+          <p class="projet-desc">
+            En deuxième année de licence, une rencontre déterminante lors d'un entretien 
+            d'orientation professionnelle a cristallisé mon ambition. J'ai échangé avec la 
+            présidente du Club des Jeunes Financiers, asset manager et entrepreneuse — 
+            une femme alliant rigueur analytique et vision stratégique.
+          </p>
+          <hr class="projet-sep">
+          <ul class="projet-bullets">
+            <li>Définition d'un projet de carrière structuré en finance</li>
+            <li>Rencontre avec des professionnels du secteur financier</li>
+            <li>Ancrage de l'ambition de devenir analyste financière</li>
+          </ul>
+          <div class="projet-tags">
+            <span class="projet-tag">Orientation</span>
+            <span class="projet-tag">Finance</span>
+            <span class="projet-tag">Club des Jeunes Financiers</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+       
         <footer>
             <nav class="bande_horizontale">
                 <p>DITOMENE DEBERCIA EMMANUELLE</p>
                 <P>Étudiante en double licence à l'UCA</P>
                 </nav>
         </footer>
+
+         <!-- Animation au scroll -->
+  <script>
+    const cards = document.querySelectorAll('.projet-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 120);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => observer.observe(card));
+  </script>
+
+
     </body>
 </html>
+
+
+
+
+  

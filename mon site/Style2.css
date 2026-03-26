@@ -35,6 +35,11 @@ body{
         color: #ffe843;
         border-color: #ffe843;
     }
+
+    
+
+
+
     h1 {
         padding: 30px;
         position: relative;
@@ -60,14 +65,7 @@ body{
     h4{
         text-decoration: underline;
         color: rgb(111, 21, 119);
-      }
-      a:visited {background-color:rgb(161, 238, 238);(78, 24, 57, 0.945)(0, 255, 255, 0.468); /* 1 */
-        color: #844;
-       }
-      a:hover, a:focus, a:active {
-        text-decoration: none;
-        color: white;
-        background: rgb(191, 31, 113);
+      
     }
 h2{
     text-align: center;

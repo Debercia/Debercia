@@ -21,20 +21,83 @@
                 <h3><a href="Divers.html">Divers</a></h3>
                 <h3><a href="Contacts.html">Contact</a></h3>
             </ul>
-            <h1>Formation et Cursus</h1>
-        </header>
-        <main>
-            <h2>Voici un aperçu de mon parcours</h2><br>
             
-            <h2><a href="mon-Cv1.pdf">Consulter mon CV</a></h2>
-            <h2 style="text-align: right;"><a href="Video.html">Capsule Vidéo</a></h2>
-            <nav style="text-align:center"><img src="fc.png" alt=""></nav>
-        </main>
-        <footer>
-            <nav class="bande_horizontale">
-                <p>DITOMENE DEBERCIA EMMANUELLE</p>
-                <P>Étudiante en double licence à l'UCA</P>
-                </nav>
-        </footer>
+    <!-- TITRE ANIMÉ -->
+    <h1>Formation & Cursus</h1>
+        </header>
+
+    <!-- CONTENU -->
+    <div class="formation-wrapper">
+
+        <div class="formation-intro">
+        
+        <p style="margin-top: -50px;"> Un aperçu de mon parcours académique, construit avec intention.</p>
+        <div class="formation-links">
+            <a href="CV_DITOMENE_1.pdf" class="btn-cv">📄 Consulter mon CV</a>
+            <a href="Video.html" class="btn-video">🎬 Capsule Vidéo</a>
+        </div>
+        </div>
+
+        <div class="timeline">
+
+        <!-- Formation 1 -->
+        <div class="timeline-item item-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+            <span class="card-year">2020 — 2021</span>
+            <p class="card-diplome">Baccalauréat général</p>
+            <p class="card-ecole">Lycée Evangélique Ma-Loango (Congo-brazzaville)</p>
+            <p class="card-desc">Mathématiques, physique-chimie, SVT.</p>
+            </div>
+        </div>
+
+        <!-- Formation 2 -->
+        <div class="timeline-item item-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+            <span class="card-year">2021 — 2022</span>
+            <p class="card-diplome">Bachelor universitaire de technologie</p>
+            <p class="card-ecole">IUT Clermont-Auvergne</p>
+            <p class="card-desc">Réseaux et Télécommunications</p>
+            </div>
+        </div>
+
+        <!-- Formation 3 -->
+        <div class="timeline-item item-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+            <span class="card-year">2022 — Aujourd'hui</span>
+            <p class="card-diplome">Double Licence</p>
+            <p class="card-ecole">Université Clermont-Auvergne</p>
+            <p class="card-desc">Comptabilité-Finance et  Analyse et politique économique </p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav class="bande_horizontale">
+        <p>DITOMENE DEBERCIA EMMANUELLE</p>
+        <p>Étudiante en double licence à l'UCA</p>
+        </nav>
+    </footer>
+
+    <script>
+        const items = document.querySelectorAll('.timeline-item');
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, i * 150);
+            observer.unobserve(entry.target);
+            }
+        });
+        }, { threshold: 0.15 });
+        items.forEach(item => observer.observe(item));
+    </script>
+
     </body>
 </html>

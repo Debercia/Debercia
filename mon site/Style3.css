@@ -1,0 +1,268 @@
+ body {
+    font-family: 'DM Sans', sans-serif;
+    background: #ffffff;
+    color: #2d2d2d;
+    min-height: 100vh;
+    padding: 60px 40px 80px;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .page-header .label {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #b5a89a;
+    margin-bottom: 14px;
+  }
+
+  .page-header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  .page-header h1 em {
+    font-style: italic;
+    color: #5bbfbf;
+  }
+
+  .subtitle {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #9c9085;
+    font-weight: 300;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 960px;
+    margin: 0 auto 48px;
+  }
+
+  .skill-card {
+    background: #faf8f5;
+    border: 0.5px solid #e8e2da;
+    border-radius: 18px;
+    padding: 28px 28px 24px;
+    transition: border-color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .skill-card:hover {
+    border-color: #d4cec6;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  }
+
+  .skill-card:hover::before {
+    opacity: 1;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--icon-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+    border: 0.5px solid var(--icon-border);
+  }
+
+  .card-category {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--tag-bg);
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: 0.5px solid var(--tag-border);
+  }
+
+  .card-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+    letter-spacing: -0.01em;
+  }
+
+  .tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 22px;
+  }
+
+  .tool-tag {
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 7px;
+    background: #ffffff;
+    border: 0.5px solid #ddd8d0;
+    color: #6b6058;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .tool-tag:hover {
+    background: var(--tag-bg);
+    color: var(--accent);
+    border-color: var(--tag-border);
+  }
+
+  .progress-section {
+    border-top: 0.5px solid #ede8e0;
+    padding-top: 16px;
+  }
+
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .progress-label span:first-child {
+    font-size: 11px;
+    color: #b5a89a;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .progress-label span:last-child {
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .progress-bar-bg {
+    height: 3px;
+    background: #ede8e0;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    background: var(--accent);
+    width: 0%;
+    transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Card color themes */
+  .card-finance {
+    --accent: #d4856e;
+    --icon-bg: #fdf2ee;
+    --icon-border: #f2d4ca;
+    --tag-bg: #fdf2ee;
+    --tag-border: #f2d4ca;
+  }
+
+  .card-code {
+    --accent: #4bb8b8;
+    --icon-bg: #eef9f9;
+    --icon-border: #c4e8e8;
+    --tag-bg: #eef9f9;
+    --tag-border: #c4e8e8;
+  }
+
+  .card-office {
+    --accent: #7eaa6e;
+    --icon-bg: #f2f8ef;
+    --icon-border: #cfe6c8;
+    --tag-bg: #f2f8ef;
+    --tag-border: #cfe6c8;
+  }
+
+  .card-creative {
+    --accent: #c06898;
+    --icon-bg: #fdf0f6;
+    --icon-border: #f0cce0;
+    --tag-bg: #fdf0f6;
+    --tag-border: #f0cce0;
+  }
+
+  /* Learning banner */
+  .learning-banner {
+    max-width: 960px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #eef9f9 0%, #fdf0f6 100%);
+    border: 0.5px solid #cce8e8;
+    border-radius: 16px;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .banner-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #4bb8b8;
+    flex-shrink: 0;
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  .banner-text {
+    font-size: 13.5px;
+    color: #7a7068;
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  .banner-text strong {
+    color: #4bb8b8;
+    font-weight: 500;
+  }
+
+  @media (max-width: 540px) {
+    body { padding: 40px 20px 60px; }
+    .skills-grid { gap: 14px; }
+    .skill-card { padding: 22px 20px 18px; }
+    .page-header h1 { font-size: 2.4rem; }
+  }

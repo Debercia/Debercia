@@ -24,74 +24,138 @@
             <h1>Compétences</h1>
         </header>
             <main class="skills">
-                <h2 class="skills title">Je décris ici les compétences que j'ai acquises via mes études</h2>
+                <h2 class="skills title"><h2 style="text-align: center; margin-bottom:150px; ">Cette section présente les compétences acquises lors de mon parcours académique</h2></h2> 
 
             <!-- Skill 1 -->
-            <div class="skill">
+            <div class="skills-grid">
 
-                <div class="skill-header">
-                    <img src="re.png" alt="">
-                    <h3>RÉSEAUX</h3>
-                    </div>
-                <p>Configuration des équipements réseaux, VLAN, Cisco Packet Tracer.</p>
+  <!-- Finance & Analyse -->
+  <div class="skill-card card-finance">
+    <div class="card-top">
+      <div class="card-icon">📊</div>
+      <span class="card-category">Finance & Analyse</span>
+    </div>
+    <h2 class="card-title">Finance & Analyse</h2>
+    <div class="tools-list">
+      <span class="tool-tag">Comptabilité financière</span>
+      <span class="tool-tag">Comptabilité analytique</span>
+      <span class="tool-tag">Excel</span>
+      <span class="tool-tag">EViews</span>
+      <span class="tool-tag">Access</span>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Niveau</span>
+        
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" data-width="72"></div>
+      </div>
+    </div>
+  </div>
 
-                    <div class="progressbar-wrapper">
-                    <div class="progressbar level-60"></div>
-                </div>
+  <!-- Programmation -->
+  <div class="skill-card card-code">
+    <div class="card-top">
+      <div class="card-icon">💻</div>
+      <span class="card-category">Programmation</span>
+    </div>
+    <h2 class="card-title">Développement</h2>
+    <div class="tools-list">
+      <span class="tool-tag">Python</span>
+      <span class="tool-tag">SQL</span>
+      <span class="tool-tag">HTML / CSS</span>
+      <span class="tool-tag">JavaScript</span>
+      <span class="tool-tag">VSCode</span>
+      <span class="tool-tag">GitHub</span>
+      <span class="tool-tag">VirtualBox</span>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Niveau</span>
+        
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" data-width="50"></div>
+      </div>
+    </div>
+  </div>
 
-            </div>
+  <!-- Bureautique -->
+  <div class="skill-card card-office">
+    <div class="card-top">
+      <div class="card-icon">📁</div>
+      <span class="card-category">Bureautique</span>
+    </div>
+    <h2 class="card-title">Microsoft 365</h2>
+    <div class="tools-list">
+      <span class="tool-tag">Word</span>
+      <span class="tool-tag">Excel</span>
+      <span class="tool-tag">PowerPoint</span>
+      <span class="tool-tag">Outlook</span>
+      <span class="tool-tag">Teams</span>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Niveau</span>
+       
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" data-width="70"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Créatif -->
+  <div class="skill-card card-creative">
+    <div class="card-top">
+      <div class="card-icon">🎨</div>
+      <span class="card-category">Créatif</span>
+    </div>
+    <h2 class="card-title">Design & Création</h2>
+    <div class="tools-list">
+      <span class="tool-tag">Canva</span>
+      <span class="tool-tag">Photoshop</span>
+      <span class="tool-tag">CapCut</span>
+    </div>
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Niveau</span>
+       
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" data-width="76"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Learning banner -->
+<div class="learning-banner">
+  <div class="banner-dot"></div>
+  <p class="banner-text">
+    <strong>En progression constante : </strong> Ces compétences évoluent au fil de mes projets et de mes apprentissages. Je travaille activement à m'améliorer, notamment en Python, en SQL et en développement web.
+  </p>
+</div>
+
+<script>
+  const fills = document.querySelectorAll('.progress-bar-fill');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.style.width = el.dataset.width + '%';
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.2 });
+  fills.forEach(f => observer.observe(f));
+</script>
 
 
-            <!-- Skill 2 -->
-            <div class="skill">
-
-                <div class="skill-header">
-                    <img src="te.png" alt="">
-                    <h3>TÉLÉCOMMUNICATIONS</h3>
-                </div>
-
-                <p>Analyse et interprétation des signaux.</p>
-
-                <div class="progressbar-wrapper">
-                    <div class="progressbar level-30"></div>
-                </div>
-
-            </div>
-
-
-            <!-- Skill 3 -->
-            <div class="skill">
-
-                <div class="skill-header">
-                    <img src="web0.png" alt="">
-                     <h3>HTML / CSS</h3>
-                 </div>
-
-                 <p>Création de sites web responsives.</p>
-
-                 <div class="progressbar-wrapper">
-                     <div class="progressbar level-60"></div>
-                </div>
-
-            </div>
-
-
-            <!-- Skill 4 -->
-            <div class="skill">
-
-                <div class="skill-header">
-                    <img src="py0.png" alt="">
-                     <h3>PYTHON</h3>
-                </div>
-
-                <p>Programmation, scripts, projets étudiants.</p>
-
-                <div class="progressbar-wrapper">
-                    <div class="progressbar level-30"></div>
-                </div>
-
-            </div>
-
+            
+    
             </main>
 
 
@@ -103,3 +167,14 @@
         </footer>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

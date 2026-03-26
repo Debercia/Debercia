@@ -676,6 +676,237 @@ h2{
 
 
 
+    
+
+    /* ===== VARIABLES ===== */
+    :root {
+      --rigueur:   #c06840;
+      --ambition:  #c06898;
+      --autonomie: #4bb8b8;
+      --card-bg:   #faf8f5;
+      --border:    #e8e2da;
+      --text:      #1a1a1a;
+      --muted:     #6b6460;
+    }
+
+    /* ===== INTRO ===== */
+    .apropos-intro {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 40px 20px;
+      text-align: center;
+    }
+    .apropos-intro .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #b5a89a;
+      margin-bottom: 16px;
+    }
+    .apropos-intro .bio {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 21px;
+      color: #2a2a2a;
+      line-height: 1.85;
+      margin-bottom: 16px;
+      text-align: left;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .apropos-intro .objectif {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.75;
+      text-align: left;
+      margin-bottom: 30px;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    /* Liens CV / Vidéo */
+    .apropos-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .apropos-links a {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .btn-cv {
+      background-color: aqua;
+      color: rgb(0,0,0);
+      border: 1px solid rgb(41, 79, 82);
+    }
+    .btn-cv:hover {
+      background-color: #ed2794 !important;
+      color: #ffe843 !important;
+      border-color: #ffe843 !important;
+    }
+    .btn-video {
+      background-color: rgb(73, 9, 65);
+      color: #5ae0d4;
+      border: 1px solid #1ABC9C;
+    }
+    .btn-video:hover {
+      background-color: #ed2794 !important;
+      color: #ffe843 !important;
+      border-color: #ffe843 !important;
+    }
+
+    /* ===== SÉPARATEUR ===== */
+    .section-sep {
+      max-width: 780px;
+      margin: 40px auto 0;
+      padding: 0 40px;
+    }
+    .section-sep h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 6px;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .section-sep .sous-titre {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #b5a89a;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* ===== GRILLE QUALITÉS ===== */
+    .qualites-wrapper {
+      padding: 0 50px 100px;
+    }
+    .qualites-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* ===== CARTE QUALITÉ ===== */
+    .qualite-card {
+      background: var(--card-bg);
+      border: 0.5px solid var(--border);
+      border-radius: 18px;
+      padding: 32px 28px 28px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .qualite-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.35s ease;
+    }
+    .qualite-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 44px rgba(0,0,0,0.08);
+    }
+    .qualite-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 18px 18px 0 0;
+    }
+
+    /* Numéro décoratif */
+    .qualite-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--accent);
+      opacity: 0.12;
+      position: absolute;
+      top: 10px;
+      right: 18px;
+      line-height: 1;
+      user-select: none;
+    }
+
+    /* Icône */
+    .qualite-icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    /* Badge */
+    .qualite-badge {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--badge-bg);
+      border: 0.5px solid var(--badge-border);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    /* Titre */
+    .qualite-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    /* Texte */
+    .qualite-desc {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      color: #3a3a3a;
+      line-height: 1.8;
+      text-align: left;
+      width: auto;
+      margin: 0;
+    }
+
+    /* Thèmes */
+    .card-rigueur   { --accent: var(--rigueur);  --badge-bg: #fdf2ee; --badge-border: #f2d4ca; }
+    .card-ambition  { --accent: var(--ambition); --badge-bg: #fdf0f6; --badge-border: #f0cce0; }
+    .card-autonomie { --accent: var(--autonomie);--badge-bg: #eef9f9; --badge-border: #c4e8e8; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 800px) {
+      .qualites-grid { grid-template-columns: 1fr; }
+      .qualites-wrapper { padding: 0 20px 80px; }
+      .apropos-intro { padding: 40px 20px 20px; }
+    }
+
+    
+
+
+
 footer{
     padding: 4px;
     margin: 0px;
@@ -688,3 +919,6 @@ footer{
 
 
 
+
+
+   

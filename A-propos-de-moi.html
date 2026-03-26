@@ -5,6 +5,10 @@
         <meta name="author" content="Emmanuelle">
         <title>DITOMENE DEBERCIA EMMANUELLE</title>
         <meta name="Desription" content="Ma page html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="Style1.css">
     </head>
     <body>
@@ -23,25 +27,107 @@
             </ul>
             <h1>A propos de moi </h1>
         </header>
-        <main>
-                
-            <section class="à propose de moi">
-                <h2>Au cours de mes études, j'ai réalisé plusieurs projets, tant dans un cadre académique qu'en totale autonomie. Parmi ces derniers : Une participation à une simulation boursière sur ABC Bourse, organisée par l'association du master Marchés Financiers de l'IAE Clermont, qui m'a permis de confronter mes connaissances théoriques à la réalité des marchés. Ce portfolio, conçu en mobilisant mes compétences en développement web : HTML, CSS, JavaScript. Loofah Nature, un projet de création de marque de beauté éthique en cours de maturation, pour lequel j'ai obtenu le statut Étudiante-Entrepreneur PÉPITE en décembre 2025.
-                </h2>
-                <h2>Étant de nature polyvalente, mon objectif est d'intégrer un master en finance et devenir analyste financier, dans un environnement dynamique, exigeant et stimulant.</h2><br> 
-    
-            <h2 style="text-align: right;"><a href="CV_DITOMENE_1.pdf">Consulter mon CV</a></h2>
-            <h2 style="text-align: right;"><a href="Video.html">Capsule Vidéo</a></h2>
-                <h1>Mes qualités</h1>
-                <nav style="text-align:center"><img src="qualites.png" alt=""></nav>
-            
-            </section>
-        </main>
+        <!-- MAIN -->
+  <main>
+
+    <div class="apropos-intro">
+      
+
+      <p class="bio">
+        Souriante, curieuse et résolument positive. Je suis sensible aux belles choses : l'élégance, la mode vintage, l'architecture ancienne, l'artisanat. Passionnée par l'histoire des grandes civilisations comme l'Égypte antique, les Moghols, les Rajputs en Inde le passé me fascine autant que l'avenir m'appelle, en finance. Et entre deux, une petite course à pied pour garder l'équilibre.☺️
+      </p>
+
+      <div class="apropos-links">
+        <a href="CV_DITOMENE_1.pdf" class="btn-cv">📄 Consulter mon CV</a>
+        <a href="Video.html" class="btn-video">🎬 Capsule Vidéo</a>
+      </div>
+    </div>
+
+    <!-- TITRE SECTION QUALITÉS -->
+    <div class="section-sep">
+      <h2>Mes qualités</h2>
+      <p class="sous-titre">Ce qui me définit en quelques mots</p>
+    </div>
+
+    <!-- GRILLE QUALITÉS -->
+    <div class="qualites-wrapper">
+      <div class="qualites-grid">
+
+        <!-- RIGUEUR -->
+        <div class="qualite-card card-rigueur">
+          <span class="qualite-num">01</span>
+          <span class="qualite-icon">🎯</span>
+          <span class="qualite-badge">Exigence personnelle</span>
+          <h3 class="qualite-title">Rigoureuse</h3>
+          <p class="qualite-desc">
+            Ma rigueur va au-delà du cadre universitaire, c'est une exigence personnelle 
+            envers moi-même&nbsp;: lorsque je me fixe un objectif, je l'atteins, quoi qu'il arrive. 
+            Les obstacles ne sont pas des raisons d'abandonner, mais des étapes à franchir.
+          </p>
+        </div>
+
+        <!-- AMBITION -->
+        <div class="qualite-card card-ambition">
+          <span class="qualite-num">02</span>
+          <span class="qualite-icon">🚀</span>
+          <span class="qualite-badge">Vision long terme</span>
+          <h3 class="qualite-title">Ambitieuse</h3>
+          <p class="qualite-desc">
+            Je construis chaque étape de mon parcours avec intention. Double licence, 
+            statut PÉPITE, compétences numériques développées en autonomie chaque choix 
+            reflète un objectif clair&nbsp;: devenir analyste financière dans un environnement 
+            exigeant et stimulant.
+          </p>
+        </div>
+
+        <!-- AUTONOMIE -->
+        <div class="qualite-card card-autonomie">
+          <span class="qualite-num">03</span>
+          <span class="qualite-icon">⚡</span>
+          <span class="qualite-badge">Indépendance d'esprit</span>
+          <h3 class="qualite-title">Autonome</h3>
+          <p class="qualite-desc">
+            Je n'attends pas qu'on me montre le chemin pour avancer. J'observe, j'analyse, 
+            je décide et j'agis. Cette indépendance d'esprit est une constante dans ma façon 
+            d'être, autant dans ma vie personnelle que dans mes projets.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
         <footer>
             <nav class="bande_horizontale">
                 <p>DITOMENE DEBERCIA EMMANUELLE</p>
                 <P>Étudiante en double licence à l'UCA</P>
                 </nav>
         </footer>
+        <!-- Animation scroll -->
+  <script>
+    const cards = document.querySelectorAll('.qualite-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 150);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => observer.observe(card));
+  </script>
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

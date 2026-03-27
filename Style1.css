@@ -915,15 +915,15 @@ h2{
     .divers-intro .tag {
       display: inline-block;
       font-family: 'DM Sans', sans-serif;
-      font-size: 11px;
+      font-size: 15px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #b5a89a;
+      color: #000000;
       margin-bottom: 14px;
     }
     .divers-intro p {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 21px;
+      font-family: 'Cormorant Garamond', sans-serif;
+      font-size: 25px;
       color: var(--muted);
       line-height: 1.8;
       width: auto;

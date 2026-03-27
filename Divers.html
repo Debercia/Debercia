@@ -5,6 +5,10 @@
         <meta name="author" content="Emmanuelle">
         <title>DITOMENE DEBERCIA EMMANUELLE</title>
         <meta name="Desription" content="Ma page html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  
         <link rel="stylesheet" href="Style1.css">
     </head>
     <body>
@@ -23,31 +27,124 @@
         </ul>
         <h1>Divers</h1>
         </header>
-<main>
-    <h2>Je décris mes activités extra-universitaires.</h2><br>
-    <nav style="text-align: center;">
-        <h2>LECTURE</h2><br>
-            <nav style="text-align:right;padding-right: -50px ;padding-top: -30px;margin-top: -10px;"><h2>"La vue est ce que vous voyez avec vos yeux, la vision est ce que vous voyez avec votre esprit."</h2></nav>
-            <img src="pe.png" alt="">
-            </nav>
-            <h2>SPORT</h2><br>
-            <h2>"Le sport est une évasion complète de la vie."</h2>
-            <nav style="text-align: center;"><img src="sport.png" alt=""></nav>
-        <h2>PHOTOGRAPHIE</h2><br>
-        <h2>"L'appareil photo est un carnet de croquis, un instrument d'intuition et de spontanéité."</h2>
-        <img src="im1.png" alt="">
-        <img src="im2.png" alt="">
-        <img src="im3.png" alt="">
-        <img src="img4.png" alt="">
-    </nav>
-    <h2>Dans la vie de tous les jours, j'aime lire sur le leadership, l'éducation financière ainsi que le développement personnel. 
-        </h2>
-</main>
+
+
+
+         <main>
+
+    <div class="divers-intro">
+      <span class="tag">Centres d'intérêt</span>
+      <p>Au-delà des études, voici ce qui nourrit ma curiosité et mon énergie au quotidien.</p>
+    </div>
+
+    <div class="divers-wrapper">
+      <div class="divers-grid">
+
+        <!-- LECTURE -->
+        <div class="divers-card card-lecture">
+          <img class="divers-img" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&q=80&fit=crop" alt="Lecture">
+          <div class="divers-body">
+            <span class="divers-badge">Romans · Nouvelles · Finance</span>
+            <div class="divers-header">
+              <span class="divers-icon">📚</span>
+              <h2 class="divers-title">Lecture</h2>
+            </div>
+            <p class="divers-quote">« La vue est ce que vous voyez avec vos yeux, la vision est ce que vous voyez avec votre esprit. »</p>
+            <p class="divers-desc">Romans, nouvelles, mais aussi lectures sur la prise de parole, le développement personnel.... Lire, c'est ma façon de continuer à apprendre en dehors des cours.</p>
+          </div>
+        </div>
+
+        <!-- SPORT -->
+        <div class="divers-card card-sport">
+          <img class="divers-img" src="https://www.mangervivant.fr/wp-content/uploads/2015/05/Course-à-pieds.jpg" alt="Course à pied">
+          <div class="divers-body">
+            <span class="divers-badge">Course à pied</span>
+            <div class="divers-header">
+              <span class="divers-icon">🏃‍♀️</span>
+              <h2 class="divers-title">Sport</h2>
+            </div>
+            <p class="divers-quote">« Le sport est une évasion complète de la vie. »</p>
+            <p class="divers-desc">La course à pied pour garder l'équilibre — entre les révisions, les projets et tout le reste. Un moment rien qu'à moi, pour me vider la tête et repartir de plus belle.</p>
+          </div>
+        </div>
+
+        <!-- CRÉATION DE CONTENU -->
+        <div class="divers-card card-contenu">
+          <img class="divers-img" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80&fit=crop" alt="Création de contenu">
+          <div class="divers-body">
+            <span class="divers-badge">Photo · Vidéo</span>
+            <div class="divers-header">
+              <span class="divers-icon">📸</span>
+              <h2 class="divers-title">Création de contenu</h2>
+            </div>
+            <p class="divers-quote">« L'appareil photo est un carnet de croquis, un instrument d'intuition et de spontanéité. »</p>
+            <p class="divers-desc">Faire des photos, monter des vidéos — j'aime raconter des histoires visuellement. C'est une autre façon de créer, différente du code ou des chiffres, mais tout aussi satisfaisante.</p>
+          </div>
+        </div>
+
+        <!-- HISTOIRE & CIVILISATIONS -->
+        <div class="divers-card card-histoire">
+          <img class="divers-img" src="https://www.instant-zero.com/wp-content/uploads/2024/02/sur-traces-civilisations-anciennes-voyage-inoubliable.jpg" alt="Civilisations anciennes">
+          <div class="divers-body">
+            <span class="divers-badge">Égypte · Moghols · Rajputs</span>
+            <div class="divers-header">
+              <span class="divers-icon">🏛️</span>
+              <h2 class="divers-title">Histoire & Civilisations</h2>
+            </div>
+            <p class="divers-quote">« Les civilisations sont les fleurs de l'histoire. »</p>
+            <p class="divers-desc">Passionnée par l'histoire des grandes civilisations — l'Égypte antique, les Moghols, les Rajputs en Inde. J'aime comprendre ce que les peuples ont bâti, créé et transmis à travers les siècles.</p>
+          </div>
+        </div>
+
+        <!-- MODE VINTAGE (pleine largeur) -->
+        <div class="divers-card card-mode full">
+          <img class="divers-img" src="https://i.pinimg.com/originals/a6/47/86/a6478683dd708543e6f628364c27ce11.jpg" alt="Mode vintage et élégance">
+          <div class="divers-body">
+            <span class="divers-badge">Élégance · Artisanat · Vintage</span>
+            <div class="divers-header">
+              <span class="divers-icon">✨</span>
+              <h2 class="divers-title">Mode & Élégance</h2>
+            </div>
+            <p class="divers-quote">« L'élégance, c'est le beau en mouvement. »</p>
+            <p class="divers-desc">Sensible à l'élégance, à la mode vintage et à l'artisanat — j'apprécie les choses faites avec soin, qui ont une histoire. C'est peut-être pour cela que l'architecture ancienne et le savoir-faire traditionnel me fascinent autant que la finance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
 <footer>
     <nav class="bande_horizontale">
         <p>DITOMENE DEBERCIA EMMANUELLE</p>
         <P>Étudiante en double licence à l'UCA</P>
         </nav>
 </footer>
+
+<script>
+    const cards = document.querySelectorAll('.divers-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 130);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => observer.observe(card));
+  </script>
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+  
